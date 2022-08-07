@@ -1,0 +1,264 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Gentium Plus', serif; 
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+	background-color: #d9e4ea; /*MOE*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+.main-nav {
+	margin-top: 5px;
+	
+}
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-transform: uppercase;
+
+    font-size: .85em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 2em;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.container {
+	border: #fff 1px solid;
+}
+
+/* ---- Section White Section ---- */
+
+.section-white-bg {
+	margin: auto;
+}
+/*photo gallery*/
+.photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	width: 100%;
+	justify-content: center;
+}
+.g-img {
+	background-color: brown;
+	height: 200px;
+	width: 300px;
+}
+.g-img img {
+	
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+	object-fit: cover;
+	object-position: top;
+	
+}
+
+
+/*OVO JE STIL ZA BANER I SVE ISPOD!!!*/
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+
+/* ---- Footer ---- */
+
+.main-footer {
+	background-color: #000;
+	columns: #fff;
+}
+
+.footer-nav {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.ul-footer-nav {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: space-around;
+	
+
+	
+	
+}
+
+.ul-footer-nav li {
+	text-transform: uppercase;
+	color: #fc8422;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	padding: 3px 0;
+	margin: 2px 0;
+	
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {	
+	.container,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+
+	.main-nav, .container{
+		display: flex;
+	  }
+	  .container {
+		flex-direction: column;
+		align-items: center;
+	  }
+/*photo gallery*/
+	  .g-img {
+		flex: 1 50%;
+		}
+/*footer*/
+		.ul-footer-nav {
+			flex-direction: row;
+			
+		}
+
+	
+	}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {	
+	.container,
+	.row {
+		width: 90%;
+		max-width: 1500px;
+	}
+
+	.container{
+		flex-direction: row;
+		justify-content: space-between;
+	  }
+/*photo gallery*/
+	  .g-img {
+		flex-basis: 0;
+	}
+}
+
+
+
+/*M O E*/
+
+.logo{
+	max-width: 400px;
+	max-height: 100px;
+}
+	
+
+/*******
+vidi u futeru LI na telefonskoj verziji su preko celog ekrana deo koji  moze da se stisne
+
+
+*******/
+
