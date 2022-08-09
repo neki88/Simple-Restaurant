@@ -6,12 +6,17 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Gentium Plus', serif; 
+	font-family: 'Work Sans', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
 	margin: 0;
 	background-color: #d9e4ea; /*MOE*/
 }
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -25,14 +30,11 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
 }
-h2,
-h3,
-a {
-	color: #093a58;
-}
+
 h2,
 h3 {
 	margin-top: 0;
+	
 }
 a {
 	text-decoration: none;
@@ -44,6 +46,49 @@ img {
 .container {
 	max-width: 95%;
 	margin: 0 auto;
+}
+
+.btn-white {
+	
+	background-color: transparent;
+	padding: 15px 25px;
+	border: #fff solid 2px;
+	border-radius: 100px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #fff;
+}
+/*
+.btn-white a {
+	display: block;
+	color: #fff;
+	background-color: transparent;
+	padding: 10px 20px;
+	border: #fff solid 1px;
+	border-radius: 100px;
+	font-size: 16px;
+	text-transform: uppercase;
+}*/
+
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+	color: #000;
+	background-color: #fff;
+	transition-duration: 0.4s;
+}
+
+.btn-black {
+	color: #fff;
+	background-color: #000;
+	padding: 15px 25px;
+	border: #000 solid 2px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 40px;
 }
 
 /* ================================= 
@@ -72,29 +117,47 @@ img {
 }
 
 .main-nav a:hover {
-	color: #093a58;
+	color: grey;
+	transition-duration: 0.2s;
 }
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-	background-image: url(../img/header.jpg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/header.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 	padding-top: .5em;
 	padding-bottom: .5em;
 }
 
-.container {
-	border: #fff 1px solid;
+
+
+.header-intro {
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+}
+/* ---- Section Traditional ---- */
+.section-traditional {
+ text-align: center;
+ padding: 100px 0;
+}
+
+h3 {
+	color: #fc8422;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 
 /* ---- Section White Section ---- */
 
 .section-white-bg {
-	margin: auto;
+	text-align: center;
+	padding-top: 100px;
 }
 /*photo gallery*/
 .photo-gallery {
@@ -119,43 +182,49 @@ img {
 	
 }
 
+.swb-2 {
+	padding: 50px 0;
+}
 
-/*OVO JE STIL ZA BANER I SVE ISPOD!!!*/
-.banner,
-.main-footer {
+
+
+/* ---- Section image background ---- */
+.section-img-bg-dwu {
+	background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/dine.jpg);
+}
+.section-img-bg-sit {
+	background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/stay-in-touch.jpg);
+}
+.section-img-bg-dwu,
+.section-img-bg-sit {
+	
+	background-blend-mode: darken;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
 	text-align: center;
-}
-.banner {
 	color: #fff;
-	background: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 48px;
+	font-size: 22px;
+	font-weight: 600;
 }
-.col {
-	padding-right: 1em;
-	padding-left: 1em;
-}
-.main-footer {
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
-}
-
-/* ---- Page Elements ---- */
-
-
-.headline {
-	margin-bottom: 0;
-}
-.feat-img {
-	border-radius: 5px;
+.section-img-bg-dwu h2,
+.section-img-bg-sit h2 {
+	color: #fff;
+	font-size: 70px;
+	font-weight: 100;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	padding-top: 10%;
 }
 
 /* ---- Footer ---- */
 
 .main-footer {
+	padding: 100px 0;
 	background-color: #000;
-	columns: #fff;
+	color: #fff;
+	text-align: center;
 }
 
 .footer-nav {
@@ -168,6 +237,7 @@ img {
 	flex-direction: column;
 	margin: 0 auto;
 	justify-content: space-around;
+	padding-bottom: 50px;
 	
 
 	
@@ -184,6 +254,29 @@ img {
 	margin: 2px 0;
 	
 }
+
+.footer-icons ul {
+	display: flex;
+	justify-content: space-between;
+	max-width: 200px;
+	margin: 0 auto;
+	
+}
+
+.footer-icons i {
+	background-color: #fff;
+	color: #000;
+	padding: 10px;
+	border-radius: 100px;
+	width: 36px;
+
+}
+.footer-p {
+	text-transform: uppercase;
+}
+
+
+
 
 /* ================================= 
   Media Queries
