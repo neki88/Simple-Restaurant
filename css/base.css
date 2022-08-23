@@ -153,6 +153,53 @@ h3 {
 	font-size: 30px;
 }
 
+.carousel {
+	align-items: center;
+	display: flex;
+	margin: 2rem auto;
+	overflow: hidden;
+	position: relative;
+	width: 900px;
+  
+  }
+  
+  .carousel__images {
+	display: flex;
+	transform: translateX(0);
+	transition: transform 0.25s;
+  }
+  
+  .carousel__button {
+	background: black;
+	color: white;
+	height: 3rem;
+	width: 3rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 0.25;
+	position: absolute;
+	transition: opacity 0.25s;
+	z-index: 1;
+  
+  
+  }
+  
+  .previous {
+	left: 5px;
+  }
+  
+  .next {
+	right: 5px;
+  }
+  
+  .previous:hover, .next:hover {
+	opacity: 0.5;
+  }
+
+
 /* ---- Section White Section ---- */
 
 .section-white-bg {
