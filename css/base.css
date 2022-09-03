@@ -133,6 +133,22 @@ img {
 	padding-bottom: .5em;
 }
 
+.main-header__menu-page {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/main-menu-header.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	min-height: 75vh;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.menu-section{
+	text-align: center;
+	
+}
+
 
 
 .header-intro {
